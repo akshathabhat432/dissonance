@@ -1,0 +1,558 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lpstyle.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/13.3.21/Tone.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js'></script>
+</head>
+
+<body>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="main.js"></script>
+
+    
+
+
+    <img id="image1" src="Ellipse 1.png">
+    <!-- <img id="title" src="dissonance (2).png"> -->
+    <img id="img2" src="el2.png">
+    <!-- <img id="tagline" src="tagline.png"> -->
+    <div id="heading"> <h1>Akshatha Bhat's Dissonance</h1></div>
+    <div class="buttons">
+        <div id='go' onclick='go()'>play</div>
+        <div id='stop' onclick='stop()'>stop</div>
+        <!-- <div id='gyo' onclick='gyo()'>get your own tune</div> -->
+    </div>
+
+ 
+    <!-- <div class="chartContainer">
+        <canvas id="my_chart"></canvas>
+    </div>
+
+    <script>
+  
+       var ctx = document.getElementById("my_chart");
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+
+                // labels: fooList,
+                datasets: [{
+                    lineTension: 0.45,
+                    fill: true,
+                    pointRadius: -1,
+                    backgroundColor: rgb(255,255,255),
+                    data: [
+                        {
+                            "Courses": "TECHNICAL DRAWING-I",
+                            "Grades": "B-",
+                            "y": 6
+                        },
+                        {
+                            "Courses": "ELEMENTS OF DESIGN",
+                            "Grades": "A",
+                            "y": 2
+                        },
+                        {
+                            "Courses": "VISUALIZATION & REPRESENTATION-I",
+                            "Grades": "A-",
+                            "y": 3
+                        },
+                        {
+                            "Courses": "SUSTAINABILITY",
+                            "Grades": "A",
+                            "y": 2
+                        },
+                        {
+                            "Courses": "DESIGN, TEXT & COMMUNICATION",
+                            "Grades": "A+",
+                            "y": 1
+                        },
+                        {
+                            "Courses": "WORLD OF ART & DESIGN-I",
+                            "Grades": "B+",
+                            "y": 4
+                        },
+                        {
+                            "Courses": "COMMUNICATION EXCELLENCE PROGRAMME ",
+                            "Grades": "B",
+                            "y": 5
+                        },
+                        {
+                            "Courses": "PHILOSOPHY OF SCIENCE",
+                            "Grades": "A+",
+                            "y": 1
+                        },
+                        {
+                            "Courses": "MATERIALS-PROPERTIES & PROCESSES",
+                            "Grades": "B+",
+                            "y": 4
+                        },
+                        {
+                            "Courses": "EXPLORING DESIGN DISCIPLINES ",
+                            "Grades": "A-",
+                            "y": 3
+                        },
+                        {
+                            "Courses": "TECHNICAL DRAWING-II ",
+                            "Grades": "B+",
+                            "y": 4
+                        },
+                        {
+                            "Courses": "VISUALIZATION & REPRESENTATION-II ",
+                            "Grades": "A",
+                            "y": 2
+                        },
+                        {
+                            "Courses": "WORLD & INDIA ",
+                            "Grades": "B",
+                            "y": 5
+                        },
+                        {
+                            "Courses": "WORLD OF ART & DESIGN-II",
+                            "Grades": "A-",
+                            "y": 3
+                        },
+                        {
+                            "Courses": "DESIGNING BEHAVIOUR (E)",
+                            "Grades": "B",
+                            "y": 5
+                        },
+                        {
+                            "Courses": "COMMON STUDIO-I ",
+                            "Grades": "C+",
+                            "y": 7
+                        },
+                        {
+                            "Courses": "VISUAL DESIGN-I ",
+                            "Grades": "B",
+                            "y": 5
+                        },
+                        {
+                            "Courses": "BASIC TYPOGRAPHY ",
+                            "Grades": "B",
+                            "y": 5
+                        },
+                        {
+                            "Courses": "BASIC PHOTOGRAPHY",
+                            "Grades": "B-",
+                            "y": 6
+                        },
+                        {
+                            "Courses": "HISTORY OF GRAPHIC DESIGN ",
+                            "Grades": "B-",
+                            "y": 6
+                        },
+                        {
+                            "Courses": "COLOR THEORY ",
+                            "Grades": "B+",
+                            "y": 4
+                        },
+                        {
+                            "Courses": "FILM APPRECIATION",
+                            "Grades": "C+",
+                            "y": 7
+                        },
+                        {
+                            "Courses": "ELEMENTS OF VIDEOGRAPHY ",
+                            "Grades": "B",
+                            "y": 5
+                        },
+                        {
+                            "Courses": "COMMON STUDIO II",
+                            "Grades": "B+",
+                            "y": 4
+                        },
+                        {
+                            "Courses": "VISUAL DESIGN-II ",
+                            "Grades": "B+",
+                            "y": 4
+                        },
+                        {
+                            "Courses": "IDENTITY DESIGN",
+                            "Grades": "A-",
+                            "y": 3
+                        },
+                        {
+                            "Courses": "ADVANCED PHOTOGRAPHY ",
+                            "Grades": "A-",
+                            "y": 3
+                        },
+                        {
+                            "Courses": "MOTION GRAPHICS ",
+                            "Grades": "B+",
+                            "y": 4
+                        },
+                        {
+                            "Courses": "COMMUNICATION THEORY & SEMIOTICS",
+                            "Grades": "A-",
+                            "y": 3
+                        },
+                        {
+                            "Courses": "ELEMENTS OF SOUND",
+                            "Grades": "B-",
+                            "y": 6
+                        },
+                        {
+                            "Courses": "ELEMENTS OF EDITING ",
+                            "Grades": "A-",
+                            "y": 3
+                        }
+                    ]
+                }]
+            },
+            options: {
+                parsing: {
+                    xAxisKey: 'Courses',
+                    yAxisKey: 'y'
+                },
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+
+                scales: {
+                    x: {
+                        display: false
+                    },
+                    y: {
+                        beginAtZero: true,
+                        display: false
+                    }
+                },
+                // transitions:{
+                //     resize:{
+                //         animations:{
+                //             duration:10
+                //         }
+                //     }
+                // }
+                animations: {
+                    yAxisKey: {
+                        duration: 2000,
+                        easing: 'easeInOutBack',
+                        from: 2,
+                        to: 4,
+                        loop: true
+                    }
+
+                    //     }
+                    // layout:{
+                    //     padding: 40
+                    // },
+                    // elements:{
+                    //     line:{
+
+                    //     }
+                    // }
+
+                }
+            }
+        });
+</script> -->
+<div style="height: 180px; width: 100%; position: absolute; top: 390px; left:-2px;">
+    <canvas id="my_chart"></canvas>
+</div>
+<script>
+    // console.log(grade);
+    var ctx = document.getElementById("my_chart");
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+
+            // labels: fooList,
+            datasets: [{
+                lineTension: 0.4,
+                fill: true,
+                pointRadius: -1,
+                backgroundColor: 'rgb(255,170,170)',
+                data: [
+                    {
+                        "Courses": "TECHNICAL DRAWING-I",
+                        "Grades": "B-",
+                        "y": 6
+                    },
+                    {
+                        "Courses": "ELEMENTS OF DESIGN",
+                        "Grades": "A",
+                        "y": 2
+                    },
+                    {
+                        "Courses": "VISUALIZATION & REPRESENTATION-I",
+                        "Grades": "A-",
+                        "y": 3
+                    },
+                    {
+                        "Courses": "SUSTAINABILITY",
+                        "Grades": "A",
+                        "y": 2
+                    },
+                    {
+                        "Courses": "DESIGN, TEXT & COMMUNICATION",
+                        "Grades": "A+",
+                        "y": 1
+                    },
+                    {
+                        "Courses": "WORLD OF ART & DESIGN-I",
+                        "Grades": "B+",
+                        "y": 4
+                    },
+                    {
+                        "Courses": "COMMUNICATION EXCELLENCE PROGRAMME ",
+                        "Grades": "B",
+                        "y": 5
+                    },
+                    {
+                        "Courses": "PHILOSOPHY OF SCIENCE",
+                        "Grades": "A+",
+                        "y": 1
+                    },
+                    {
+                        "Courses": "MATERIALS-PROPERTIES & PROCESSES",
+                        "Grades": "B+",
+                        "y": 4
+                    },
+                    {
+                        "Courses": "EXPLORING DESIGN DISCIPLINES ",
+                        "Grades": "A-",
+                        "y": 3
+                    },
+                    {
+                        "Courses": "TECHNICAL DRAWING-II ",
+                        "Grades": "B+",
+                        "y": 4
+                    },
+                    {
+                        "Courses": "VISUALIZATION & REPRESENTATION-II ",
+                        "Grades": "A",
+                        "y": 2
+                    },
+                    {
+                        "Courses": "WORLD & INDIA ",
+                        "Grades": "B",
+                        "y": 5
+                    },
+                    {
+                        "Courses": "WORLD OF ART & DESIGN-II",
+                        "Grades": "A-",
+                        "y": 3
+                    },
+                    {
+                        "Courses": "DESIGNING BEHAVIOUR (E)",
+                        "Grades": "B",
+                        "y": 5
+                    },
+                    {
+                        "Courses": "COMMON STUDIO-I ",
+                        "Grades": "C+",
+                        "y": 7
+                    },
+                    {
+                        "Courses": "VISUAL DESIGN-I ",
+                        "Grades": "B",
+                        "y": 5
+                    },
+                    {
+                        "Courses": "BASIC TYPOGRAPHY ",
+                        "Grades": "B",
+                        "y": 5
+                    },
+                    {
+                        "Courses": "BASIC PHOTOGRAPHY",
+                        "Grades": "B-",
+                        "y": 6
+                    },
+                    {
+                        "Courses": "HISTORY OF GRAPHIC DESIGN ",
+                        "Grades": "B-",
+                        "y": 6
+                    },
+                    {
+                        "Courses": "COLOR THEORY ",
+                        "Grades": "B+",
+                        "y": 4
+                    },
+                    {
+                        "Courses": "FILM APPRECIATION",
+                        "Grades": "C+",
+                        "y": 7
+                    },
+                    {
+                        "Courses": "ELEMENTS OF VIDEOGRAPHY ",
+                        "Grades": "B",
+                        "y": 5
+                    },
+                    {
+                        "Courses": "COMMON STUDIO II",
+                        "Grades": "B+",
+                        "y": 4
+                    },
+                    {
+                        "Courses": "VISUAL DESIGN-II ",
+                        "Grades": "B+",
+                        "y": 4
+                    },
+                    {
+                        "Courses": "IDENTITY DESIGN",
+                        "Grades": "A-",
+                        "y": 3
+                    },
+                    {
+                        "Courses": "ADVANCED PHOTOGRAPHY ",
+                        "Grades": "A-",
+                        "y": 3
+                    },
+                    {
+                        "Courses": "MOTION GRAPHICS ",
+                        "Grades": "B+",
+                        "y": 4
+                    },
+                    {
+                        "Courses": "COMMUNICATION THEORY & SEMIOTICS",
+                        "Grades": "A-",
+                        "y": 3
+                    },
+                    {
+                        "Courses": "ELEMENTS OF SOUND",
+                        "Grades": "B-",
+                        "y": 6
+                    },
+                    {
+                        "Courses": "ELEMENTS OF EDITING ",
+                        "Grades": "A-",
+                        "y": 3
+                    }
+                ]
+            }]
+        },
+        options: {
+            parsing: {
+                xAxisKey: 'Courses',
+                yAxisKey: 'y'
+            },
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false }
+            },
+
+            scales: {
+                x: {
+                    display: false
+                },
+                y: {
+                    beginAtZero: true,
+                    display: false
+                }
+            },
+            // transitions:{
+            //     resize:{
+            //         animations:{
+            //             duration:10
+            //         }
+            //     }
+            // }
+            animations: {
+                yAxisKey: {
+                    duration: 1000,
+                    easing: 'easeInOutBack',
+                    from: 2,
+                    to: 4,
+                    loop: true
+                }
+
+                //     }
+                // layout:{
+                //     padding: 40
+                // },
+                // elements:{
+                //     line:{
+
+                //     }
+                // }
+
+            }
+        }});
+    console.log(grade);
+</script>
+
+
+<script>
+        var vol = new Tone.Volume(-12).toMaster();
+        var poly = new Tone.PolySynth(3, Tone.FMSynth);
+        poly.connect(vol);
+
+
+        var p1 = new Tone.Players({
+            "kick": 'https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/kick.mp3',
+            "snare": 'https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/snare.mp3',
+            "hihat": 'https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/hh.mp3'
+        },
+            function () {
+                //console.log("alert")
+            })
+
+        p1.connect(vol);
+
+        function go() {
+
+
+            Tone.context.latencyHint = 'fastest';
+            Tone.Transport.bpm.value = 120;
+
+
+
+            var seq = new Tone.Sequence(function (time, idx) {
+
+                if ([1, 3, 5, 7, 9, 11, 13, 15].indexOf(idx) >= 0)
+                    p1.get('hihat').start();
+                if ([0, 2, 4, 6, 8, 10, 12, 14, 16].indexOf(idx) >= 0)
+                    p1.get("kick").start();
+                if ([0, 2, 6, 10, 14, 16].indexOf(idx) >= 0)
+                    p1.get("snare").start();
+
+
+
+                var chords = [
+                    ['B3', 'A3', 'B4'],
+                    ['C3', 'B3', 'A3'],
+                    ['A3', 'C3', 'B3'],
+                    ['A3', 'B3', 'C3']
+                ];
+
+                var chordIndex = -1;
+                if (idx == 0) chordIndex = 0;
+                if (idx == 4) chordIndex = 1;
+                if (idx == 8) chordIndex = 2;
+                if (idx == 12) chordIndex = 3;
+
+                if (chordIndex > 0) {
+                    poly.triggerAttackRelease(chords[chordIndex][0], '16n');
+                    poly.triggerAttackRelease(chords[chordIndex][1], '16n', '+8n');
+                    poly.triggerAttackRelease(chords[chordIndex][2], '16n', '+4n');
+
+                }
+
+            }, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], "8n");
+            Tone.Transport.start('+0.2');
+            seq.start();
+        }
+
+        function stop() {
+            Tone.Transport.stop();
+        }
+
+
+    </script>
+</body>
+
+</html>
